@@ -1,6 +1,6 @@
+DataT=importdata('Data_T.txt')
+[N1, N2]=size(DataT)
 x=0:100:19900;
-N1=200;
-N2=501;
 v = VideoWriter('newfile1.avi');
 profiles = VideoWriter.getProfiles()
 v.Quality=100;
@@ -17,4 +17,4 @@ writeVideo(v,M(t))
 hold off;
 end
 close(v);
-movie(M,N2);
+movie(M,1);
